@@ -10,12 +10,12 @@ function mailing($email, $message)
     $config['wordWrap'] = true;
     $config['SMTPHost'] = "smtp.gmail.com";
     $config['SMTPPort'] = '587';
-    $config['SMTPUser'] = "mr.firmanssyah@gmail.com";
-    $config['SMTPPass'] = "fidy@LOVEYOU28";
+    $config['SMTPUser'] = "your email";
+    $config['SMTPPass'] = "your pass";
     $config['mailType'] = "html";
     $config['newline'] = "\r\n";
     $emailSender->initialize($config);
-    $emailSender->setFrom("mr.firmanssyah@gmail.com", "rav");
+    $emailSender->setFrom("your email", "rav");
     $emailSender->setTo($email);
     // $email->setCC('another@another-example.com');
     // $email->setBCC('them@their-example.com');
